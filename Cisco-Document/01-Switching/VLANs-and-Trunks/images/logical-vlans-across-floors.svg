@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <g id="sw">
+      <rect x="-48" y="-18" width="96" height="36" rx="6" fill="#2b6cb0"/>
+      <path d="M-24 -6 h48 l-6 -5 M24 6 h-48 l6 5" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="pc">
+      <rect x="-16" y="-14" width="32" height="22" rx="3" fill="#4a5568"/>
+      <rect x="-12" y="-10" width="24" height="14" rx="1" fill="#e2e8f0"/>
+      <rect x="-10" y="10" width="20" height="4" rx="1" fill="#4a5568"/>
+    </g>
+  </defs>
+  <rect width="800" height="500" fill="#ffffff"/>
+  <text x="400" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#1a202c">층별 스위치 위의 VLAN (Logical)</text>
+
+  <!-- floor bands -->
+  <g font-size="14" font-weight="600" fill="#4a5568">
+    <rect x="20" y="60" width="760" height="120" rx="8" fill="#f7fafc" stroke="#e2e8f0"/>
+    <text x="36" y="84">3F</text>
+    <rect x="20" y="192" width="760" height="120" rx="8" fill="#f7fafc" stroke="#e2e8f0"/>
+    <text x="36" y="216">2F</text>
+    <rect x="20" y="324" width="760" height="120" rx="8" fill="#f7fafc" stroke="#e2e8f0"/>
+    <text x="36" y="348">1F</text>
+  </g>
+
+  <!-- trunk links between floor switches -->
+  <g stroke="#718096" stroke-width="3">
+    <line x1="140" y1="138" x2="140" y2="252"/>
+    <line x1="140" y1="270" x2="140" y2="366"/>
+  </g>
+  <text x="152" y="200" font-size="12" fill="#718096">Trunk</text>
+  <text x="152" y="332" font-size="12" fill="#718096">Trunk</text>
+
+  <!-- switches -->
+  <use href="#sw" x="140" y="120"/><use href="#sw" x="140" y="252"/><use href="#sw" x="140" y="384"/>
+
+  <!-- PC links -->
+  <g stroke="#a0aec0" stroke-width="1.8">
+    <line x1="188" y1="120" x2="300" y2="120"/><line x1="300" y1="120" x2="660" y2="120"/>
+    <line x1="188" y1="252" x2="660" y2="252"/>
+    <line x1="188" y1="384" x2="660" y2="384"/>
+  </g>
+  <g stroke="#a0aec0" stroke-width="1.8">
+    <line x1="300" y1="120" x2="300" y2="132"/><line x1="420" y1="120" x2="420" y2="132"/><line x1="540" y1="120" x2="540" y2="132"/><line x1="660" y1="120" x2="660" y2="132"/>
+    <line x1="300" y1="252" x2="300" y2="264"/><line x1="420" y1="252" x2="420" y2="264"/><line x1="540" y1="252" x2="540" y2="264"/><line x1="660" y1="252" x2="660" y2="264"/>
+    <line x1="300" y1="384" x2="300" y2="396"/><line x1="420" y1="384" x2="420" y2="396"/><line x1="540" y1="384" x2="540" y2="396"/><line x1="660" y1="384" x2="660" y2="396"/>
+  </g>
+
+  <!-- VLAN colors: Research #dd6b20, Engineering #3182ce, Sales #38a169 -->
+  <!-- 3F: Engineering, Research, Sales, Engineering -->
+  <g transform="translate(0,152)">
+    <rect x="276" y="-22" width="48" height="44" rx="6" fill="#ebf8ff" stroke="#3182ce" stroke-width="2.5"/><use href="#pc" x="300" y="0"/>
+    <rect x="396" y="-22" width="48" height="44" rx="6" fill="#fffaf0" stroke="#dd6b20" stroke-width="2.5"/><use href="#pc" x="420" y="0"/>
+    <rect x="516" y="-22" width="48" height="44" rx="6" fill="#f0fff4" stroke="#38a169" stroke-width="2.5"/><use href="#pc" x="540" y="0"/>
+    <rect x="636" y="-22" width="48" height="44" rx="6" fill="#ebf8ff" stroke="#3182ce" stroke-width="2.5"/><use href="#pc" x="660" y="0"/>
+  </g>
+  <!-- 2F: Sales, Engineering, Research, Sales -->
+  <g transform="translate(0,284)">
+    <rect x="276" y="-22" width="48" height="44" rx="6" fill="#f0fff4" stroke="#38a169" stroke-width="2.5"/><use href="#pc" x="300" y="0"/>
+    <rect x="396" y="-22" width="48" height="44" rx="6" fill="#ebf8ff" stroke="#3182ce" stroke-width="2.5"/><use href="#pc" x="420" y="0"/>
+    <rect x="516" y="-22" width="48" height="44" rx="6" fill="#fffaf0" stroke="#dd6b20" stroke-width="2.5"/><use href="#pc" x="540" y="0"/>
+    <rect x="636" y="-22" width="48" height="44" rx="6" fill="#f0fff4" stroke="#38a169" stroke-width="2.5"/><use href="#pc" x="660" y="0"/>
+  </g>
+  <!-- 1F: Research, Engineering, Sales, Research -->
+  <g transform="translate(0,416)">
+    <rect x="276" y="-22" width="48" height="44" rx="6" fill="#fffaf0" stroke="#dd6b20" stroke-width="2.5"/><use href="#pc" x="300" y="0"/>
+    <rect x="396" y="-22" width="48" height="44" rx="6" fill="#ebf8ff" stroke="#3182ce" stroke-width="2.5"/><use href="#pc" x="420" y="0"/>
+    <rect x="516" y="-22" width="48" height="44" rx="6" fill="#f0fff4" stroke="#38a169" stroke-width="2.5"/><use href="#pc" x="540" y="0"/>
+    <rect x="636" y="-22" width="48" height="44" rx="6" fill="#fffaf0" stroke="#dd6b20" stroke-width="2.5"/><use href="#pc" x="660" y="0"/>
+  </g>
+
+  <!-- legend -->
+  <g font-size="13" fill="#1a202c">
+    <rect x="170" y="462" width="16" height="16" rx="3" fill="#fffaf0" stroke="#dd6b20" stroke-width="2.5"/><text x="194" y="475">VLAN Research</text>
+    <rect x="340" y="462" width="16" height="16" rx="3" fill="#ebf8ff" stroke="#3182ce" stroke-width="2.5"/><text x="364" y="475">VLAN Engineering</text>
+    <rect x="530" y="462" width="16" height="16" rx="3" fill="#f0fff4" stroke="#38a169" stroke-width="2.5"/><text x="554" y="475">VLAN Sales</text>
+  </g>
+</svg>

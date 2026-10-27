@@ -4,15 +4,7 @@
 
 부서마다 스위치를 하나씩 두고, 사용자를 물리적 위치에 따라 해당 스위치에 연결한 구조를 생각해 보자.
 
-```mermaid
-graph TD
-    R[Router] --- Internet((Internet))
-    R --- HD[Helpdesk SW]
-    HD --- RS[Research SW]
-    HD --- EN[Engineering SW]
-    HD --- SA[Sales SW]
-    HD --- HR[Human Resource SW]
-```
+![부서별 스위치로 나눈 네트워크](images/physical-department-switches.svg)
 
 언뜻 깔끔해 보이지만, 다음 질문을 던져 보면 약점이 드러난다.
 
@@ -46,21 +38,7 @@ graph TD
 
 **VLAN (Virtual LAN)** 은 하나의 물리 스위치를 논리적으로 여러 개로 나누는 기술이다. 쉽게 말해 **"스위치 안의 스위치"**.
 
-```mermaid
-graph LR
-    subgraph Floor1[1층 스위치]
-        A1[PC - Research]
-        A2[PC - Engineering]
-    end
-    subgraph Floor2[2층 스위치]
-        B1[PC - Engineering]
-        B2[PC - Sales]
-    end
-    subgraph Floor3[3층 스위치]
-        C1[PC - Engineering]
-        C2[PC - Research]
-    end
-```
+![층별 스위치 위의 VLAN](images/logical-vlans-across-floors.svg)
 
 물리적으로는 층별 스위치에 섞여 연결되어 있어도, 논리적으로는 `Research`, `Engineering`, `Sales` 3개의 VLAN으로 묶을 수 있다.
 

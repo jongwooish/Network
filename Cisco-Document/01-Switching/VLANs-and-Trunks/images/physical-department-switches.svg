@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <g id="sw">
+      <rect x="-48" y="-18" width="96" height="36" rx="6" fill="#2b6cb0"/>
+      <path d="M-24 -6 h48 l-6 -5 M24 6 h-48 l6 5" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="pc">
+      <rect x="-16" y="-14" width="32" height="22" rx="3" fill="#4a5568"/>
+      <rect x="-12" y="-10" width="24" height="14" rx="1" fill="#e2e8f0"/>
+      <rect x="-10" y="10" width="20" height="4" rx="1" fill="#4a5568"/>
+    </g>
+  </defs>
+  <rect width="800" height="480" fill="#ffffff"/>
+  <text x="400" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#1a202c">부서별 스위치로 나눈 네트워크 (Physical)</text>
+
+  <!-- Internet -->
+  <g transform="translate(400,78)">
+    <ellipse cx="-22" cy="4" rx="34" ry="20" fill="#edf2f7" stroke="#a0aec0"/>
+    <ellipse cx="18" cy="-4" rx="38" ry="24" fill="#edf2f7" stroke="#a0aec0"/>
+    <ellipse cx="30" cy="10" rx="30" ry="16" fill="#edf2f7" stroke="#a0aec0"/>
+    <text x="4" y="8" text-anchor="middle" font-size="14" fill="#2d3748">Internet</text>
+  </g>
+
+  <!-- links -->
+  <g stroke="#718096" stroke-width="2.5">
+    <line x1="400" y1="102" x2="400" y2="140"/>
+    <line x1="400" y1="180" x2="400" y2="222"/>
+    <line x1="400" y1="258" x2="115" y2="322"/>
+    <line x1="400" y1="258" x2="305" y2="322"/>
+    <line x1="400" y1="258" x2="495" y2="322"/>
+    <line x1="400" y1="258" x2="685" y2="322"/>
+  </g>
+  <g stroke="#a0aec0" stroke-width="1.8">
+    <line x1="115" y1="358" x2="85" y2="400"/><line x1="115" y1="358" x2="145" y2="400"/>
+    <line x1="305" y1="358" x2="275" y2="400"/><line x1="305" y1="358" x2="335" y2="400"/>
+    <line x1="495" y1="358" x2="465" y2="400"/><line x1="495" y1="358" x2="525" y2="400"/>
+    <line x1="685" y1="358" x2="655" y2="400"/><line x1="685" y1="358" x2="715" y2="400"/>
+  </g>
+
+  <!-- Router -->
+  <g transform="translate(400,160)">
+    <ellipse cx="0" cy="0" rx="44" ry="20" fill="#2f855a"/>
+    <path d="M-20 0 h40 M0 -11 v22" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+    <text x="62" y="5" font-size="14" fill="#1a202c">Router</text>
+  </g>
+
+  <!-- Helpdesk -->
+  <use href="#sw" x="400" y="240"/>
+  <text x="460" y="245" font-size="14" fill="#1a202c">Helpdesk</text>
+
+  <!-- Departments -->
+  <use href="#sw" x="115" y="340"/><text x="115" y="318" text-anchor="middle" font-size="14" font-weight="600" fill="#1a202c" dy="-8">Research</text>
+  <use href="#sw" x="305" y="340"/><text x="305" y="318" text-anchor="middle" font-size="14" font-weight="600" fill="#1a202c" dy="-8">Engineering</text>
+  <use href="#sw" x="495" y="340"/><text x="495" y="318" text-anchor="middle" font-size="14" font-weight="600" fill="#1a202c" dy="-8">Sales</text>
+  <use href="#sw" x="685" y="340"/><text x="685" y="318" text-anchor="middle" font-size="14" font-weight="600" fill="#1a202c" dy="-8">Human Resource</text>
+
+  <use href="#pc" x="85" y="414"/><use href="#pc" x="145" y="414"/>
+  <use href="#pc" x="275" y="414"/><use href="#pc" x="335" y="414"/>
+  <use href="#pc" x="465" y="414"/><use href="#pc" x="525" y="414"/>
+  <use href="#pc" x="655" y="414"/><use href="#pc" x="715" y="414"/>
+
+  <!-- annotations -->
+  <rect x="20" y="446" width="760" height="26" rx="5" fill="#fff5f5" stroke="#feb2b2"/>
+  <text x="400" y="464" text-anchor="middle" font-size="13" fill="#c53030">라우터 아래는 전부 하나의 브로드캐스트 도메인 · Helpdesk 스위치 = 단일 장애점(SPOF)</text>
+</svg>
