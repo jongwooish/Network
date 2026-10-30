@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="800" height="270" fill="#ffffff"/>
+  <text x="400" y="26" text-anchor="middle" font-size="17" font-weight="700" fill="#1a202c">802.1Q 프레임 — Source MAC 뒤에 4바이트 Tag 삽입</text>
+  <g font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">
+    <rect x="20"  y="48" width="100" height="46" rx="4" fill="#718096"/><text x="70"  y="76">Preamble</text>
+    <rect x="124" y="48" width="110" height="46" rx="4" fill="#718096"/><text x="179" y="76">Dest MAC</text>
+    <rect x="238" y="48" width="110" height="46" rx="4" fill="#718096"/><text x="293" y="76">Source MAC</text>
+    <rect x="352" y="48" width="70"  height="46" rx="4" fill="#2b6cb0"/><text x="387" y="76">Tag</text>
+    <rect x="426" y="48" width="100" height="46" rx="4" fill="#718096"/><text x="476" y="76">Type/Length</text>
+    <rect x="530" y="48" width="180" height="46" rx="4" fill="#718096"/><text x="620" y="76">Data</text>
+    <rect x="714" y="48" width="66"  height="46" rx="4" fill="#718096"/><text x="747" y="76">FCS</text>
+  </g>
+  <polygon points="352,96 422,96 780,150 20,150" fill="#bee3f8" opacity="0.6"/>
+  <g font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">
+    <rect x="20"  y="152" width="300" height="50" rx="4" fill="#2c5282"/><text x="170" y="182">TPID = 0x8100</text>
+    <rect x="324" y="152" width="110" height="50" rx="4" fill="#2c5282"/><text x="379" y="182">PCP (Priority)</text>
+    <rect x="438" y="152" width="70"  height="50" rx="4" fill="#2c5282"/><text x="473" y="182">CFI/DEI</text>
+    <rect x="512" y="152" width="268" height="50" rx="4" fill="#dd6b20"/><text x="646" y="182">VLAN ID (VID)</text>
+  </g>
+  <g font-size="12" fill="#4a5568" text-anchor="middle">
+    <text x="170" y="222">16 bit</text><text x="379" y="222">3 bit</text><text x="473" y="222">1 bit</text><text x="646" y="222">12 bit (0~4095)</text>
+  </g>
+  <text x="400" y="254" text-anchor="middle" font-size="12" fill="#718096">Tag 전체 = 4바이트(32bit) · 스위치는 VID를 보고 프레임의 VLAN을 구분</text>
+</svg>

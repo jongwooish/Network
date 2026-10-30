@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <g id="pc">
+      <rect x="-22" y="-18" width="44" height="30" rx="4" fill="#4a5568"/>
+      <rect x="-17" y="-13" width="34" height="20" rx="2" fill="#e2e8f0"/>
+      <rect x="-12" y="14" width="24" height="5" rx="2" fill="#4a5568"/>
+    </g>
+    <g id="sw">
+      <rect x="-55" y="-22" width="110" height="44" rx="7" fill="#2b6cb0"/>
+      <path d="M-26 -7 h52 l-6 -5 M26 7 h-52 l6 5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </defs>
+  <rect width="800" height="340" fill="#ffffff"/>
+  <!-- access links -->
+  <g stroke-width="3" fill="none">
+    <path d="M90 70 H250 V148" stroke="#e53e3e"/>
+    <path d="M90 170 H230" stroke="#38a169"/>
+    <path d="M90 270 H250 V192" stroke="#3182ce"/>
+    <path d="M710 70 H550 V148" stroke="#e53e3e"/>
+    <path d="M710 170 H570" stroke="#38a169"/>
+    <path d="M710 270 H550 V192" stroke="#3182ce"/>
+  </g>
+  <!-- trunk -->
+  <g stroke-width="8">
+    <line x1="305" y1="170" x2="340" y2="170" stroke="#e53e3e"/>
+    <line x1="340" y1="170" x2="375" y2="170" stroke="#38a169"/>
+    <line x1="375" y1="170" x2="410" y2="170" stroke="#3182ce"/>
+    <line x1="410" y1="170" x2="445" y2="170" stroke="#e53e3e"/>
+    <line x1="445" y1="170" x2="480" y2="170" stroke="#38a169"/>
+    <line x1="480" y1="170" x2="495" y2="170" stroke="#3182ce"/>
+  </g>
+  <text x="400" y="150" text-anchor="middle" font-size="15" font-weight="700" fill="#1a202c">Trunk (802.1Q)</text>
+  <text x="400" y="200" text-anchor="middle" font-size="12" fill="#4a5568">VLAN 10 · 20 · 30 모두 한 링크로</text>
+  <use href="#sw" x="250" y="170"/><text x="250" y="232" text-anchor="middle" font-size="14" font-weight="700" fill="#1a202c">SW1</text>
+  <use href="#sw" x="550" y="170"/><text x="550" y="232" text-anchor="middle" font-size="14" font-weight="700" fill="#1a202c">SW2</text>
+  <use href="#pc" x="62" y="70"/><use href="#pc" x="62" y="170"/><use href="#pc" x="62" y="270"/>
+  <use href="#pc" x="738" y="70"/><use href="#pc" x="738" y="170"/><use href="#pc" x="738" y="270"/>
+  <g font-size="13" font-weight="600">
+    <text x="150" y="62" text-anchor="middle" fill="#c53030">VLAN 10</text>
+    <text x="150" y="162" text-anchor="middle" fill="#2f855a">VLAN 20</text>
+    <text x="150" y="262" text-anchor="middle" fill="#2b6cb0">VLAN 30</text>
+    <text x="650" y="62" text-anchor="middle" fill="#c53030">VLAN 10</text>
+    <text x="650" y="162" text-anchor="middle" fill="#2f855a">VLAN 20</text>
+    <text x="650" y="262" text-anchor="middle" fill="#2b6cb0">VLAN 30</text>
+  </g>
+  <text x="400" y="320" text-anchor="middle" font-size="12" fill="#718096">PC ↔ 스위치 = Access 링크 (VLAN 1개) · 스위치 ↔ 스위치 = Trunk 링크 (여러 VLAN)</text>
+</svg>

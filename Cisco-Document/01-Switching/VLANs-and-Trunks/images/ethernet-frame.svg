@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 130" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="760" height="130" fill="#ffffff"/>
+  <text x="380" y="26" text-anchor="middle" font-size="17" font-weight="700" fill="#1a202c">일반 Ethernet 프레임 — VLAN 정보를 담을 필드가 없다</text>
+  <g font-size="14" font-weight="600" fill="#ffffff" text-anchor="middle">
+    <rect x="20"  y="48" width="110" height="50" rx="4" fill="#4a5568"/><text x="75"  y="78">Preamble</text>
+    <rect x="134" y="48" width="130" height="50" rx="4" fill="#4a5568"/><text x="199" y="78">Dest MAC</text>
+    <rect x="268" y="48" width="130" height="50" rx="4" fill="#4a5568"/><text x="333" y="78">Source MAC</text>
+    <rect x="402" y="48" width="110" height="50" rx="4" fill="#4a5568"/><text x="457" y="78">Type/Length</text>
+    <rect x="516" y="48" width="160" height="50" rx="4" fill="#4a5568"/><text x="596" y="78">Data</text>
+    <rect x="680" y="48" width="60"  height="50" rx="4" fill="#4a5568"/><text x="710" y="78">FCS</text>
+  </g>
+  <text x="380" y="120" text-anchor="middle" font-size="13" fill="#c53030">? 이 프레임이 어느 VLAN 소속인지 알 방법이 없음</text>
+</svg>
