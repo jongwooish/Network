@@ -1,0 +1,37 @@
+# ── 개인 키 · 인증서 비밀 파일 ─────────────────
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.ppk
+*.gpg
+*.asc
+*.kdbx
+
+# SSH 키
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+known_hosts
+authorized_keys
+
+# ── 환경 변수 · 접속 정보 ──────────────────────
+.env
+.env.*
+*.secret
+*credentials*
+*password*
+
+# ── 로컬 PC · 가상머신 파일 ────────────────────
+*.vmx
+*.vmdk
+*.vmsd
+*.nvram
+*.log
+*.pkt.bak
+.DS_Store
+Thumbs.db
+desktop.ini
