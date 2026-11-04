@@ -1,0 +1,40 @@
+# Blocks private keys, tokens and personal PC info from staying in this repo.
+# Runs on every push (including uploads made in the GitHub web UI) and on pull requests.
+name: Privacy check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Forbidden file names (keys, certs, env, VM files)
+        run: |
+          bad=$(git ls-files | grep -iE '\.(key|pem|p12|pfx|jks|keystore|ppk|gpg|kdbx|vmx|vmdk|vmem|nvram)$|(^|/)(id_(rsa|dsa|ecdsa|ed25519)[^/]*|\.env(\..*)?|authorized_keys|known_hosts)$|privatekey' || true)
+          if [ -n "$bad" ]; then
+            echo "::error::Files that must not be uploaded:"; echo "$bad"; exit 1
+          fi
+          echo "OK - no forbidden files"
+
+      - name: Private keys and local PC paths in file contents
+        run: |
+          hits=$(git grep -nIE 'BEGIN ([A-Z]+ )?PRIVATE KEY|[A-Za-z]:(\\|₩)Users(\\|₩)' -- . ':!.github/' || true)
+          if [ -n "$hits" ]; then
+            echo "::error::Private key or local PC path found:"; echo "$hits"; exit 1
+          fi
+          echo "OK - no private keys or local paths"
+
+      - name: Secret scan (gitleaks, full history)
+        run: |
+          curl -sSL https://github.com/gitleaks/gitleaks/releases/download/v8.21.2/gitleaks_8.21.2_linux_x64.tar.gz | tar xz gitleaks
+          ./gitleaks git . --redact --no-banner
