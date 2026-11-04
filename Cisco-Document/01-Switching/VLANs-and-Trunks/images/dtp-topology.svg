@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <g id="sw">
+      <rect x="-48" y="-24" width="96" height="48" rx="8" fill="#2b6cb0"/>
+      <path d="M-24 -6 h48 l-6 -5 M24 6 h-48 l6 5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </defs>
+  <rect width="600" height="160" fill="#ffffff"/>
+  <line x1="148" y1="70" x2="452" y2="70" stroke="#718096" stroke-width="3"/>
+  <text x="300" y="56" text-anchor="middle" font-size="13" font-weight="600" fill="#4a5568">DTP 협상 ⇄</text>
+  <use href="#sw" x="100" y="70"/><text x="100" y="122" text-anchor="middle" font-size="15" font-weight="700" fill="#1a202c">SW1</text>
+  <use href="#sw" x="500" y="70"/><text x="500" y="122" text-anchor="middle" font-size="15" font-weight="700" fill="#1a202c">SW2</text>
+  <g font-size="12" fill="#2d3748" text-anchor="middle">
+    <rect x="160" y="78" width="52" height="20" rx="10" fill="#edf2f7" stroke="#a0aec0"/><text x="186" y="92">Gi0/0</text>
+    <rect x="388" y="78" width="52" height="20" rx="10" fill="#edf2f7" stroke="#a0aec0"/><text x="414" y="92">Gi0/0</text>
+  </g>
+  <text x="300" y="148" text-anchor="middle" font-size="12" fill="#718096">Cisco Catalyst 3560 · 초기 설정 상태</text>
+</svg>
