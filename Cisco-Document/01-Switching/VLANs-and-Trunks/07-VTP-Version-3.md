@@ -1,5 +1,7 @@
 # VTP Version 3
 
+**한국어** | [English](README/07-VTP-Version-3.en.md) | [日本語](README/07-VTP-Version-3.ja.md) | [简体中文](README/07-VTP-Version-3.zh-CN.md) | [Español](README/07-VTP-Version-3.es.md) | [Français](README/07-VTP-Version-3.fr.md)
+
 VTP 버전 3의 목적도 VLAN 동기화로 같지만, 버전 1·2의 약점을 고치고 여러 기능이 추가되었습니다. 예전 Catalyst IOS에서는 지원되지 않다가 최근 IOS부터 쓸 수 있습니다.
 
 > VTP 기본 개념(Server / Client / Transparent, revision)은 [06. Introduction to VTP](06-Introduction-to-VTP.md) 를 먼저 보세요.
