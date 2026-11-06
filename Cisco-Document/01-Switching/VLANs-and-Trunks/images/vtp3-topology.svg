@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<defs><g id="sw"><rect x="-48" y="-24" width="96" height="48" rx="8" fill="#2b6cb0"/><path d="M-24 -6 h48 l-6 -5 M24 6 h-48 l6 5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g><g id="pc"><rect x="-20" y="-16" width="40" height="27" rx="3" fill="#4a5568"/><rect x="-16" y="-12" width="32" height="18" rx="2" fill="#e2e8f0"/><rect x="-11" y="13" width="22" height="5" rx="2" fill="#4a5568"/></g><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#e53e3e"/></marker></defs>
+<rect width="640" height="330" fill="#ffffff"/>
+<g stroke="#718096" stroke-width="3"><line x1="320" y1="70" x2="120" y2="250"/><line x1="320" y1="70" x2="520" y2="250"/><line x1="120" y1="250" x2="520" y2="250"/></g>
+<use href="#sw" x="320" y="60"/><text x="320" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#1a202c">SW1</text>
+<use href="#sw" x="120" y="250"/><text x="120" y="298" text-anchor="middle" font-size="15" font-weight="700" fill="#1a202c">SW2</text>
+<use href="#sw" x="520" y="250"/><text x="520" y="298" text-anchor="middle" font-size="15" font-weight="700" fill="#1a202c">SW3</text>
+<text x="320" y="320" text-anchor="middle" font-size="12" fill="#718096">All links are 802.1Q trunks · VTP version 3 domain "JJONG"</text>
+</svg>
