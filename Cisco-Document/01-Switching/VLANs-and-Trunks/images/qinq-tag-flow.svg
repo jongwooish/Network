@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="900" height="330" fill="#ffffff"/>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e53e3e"/></marker>
+  </defs>
+  <text x="450" y="26" text-anchor="middle" font-size="17" font-weight="700" fill="#1a202c">Q-in-Q — 고객 Tag(12) 위에 Provider Tag(123)를 하나 더</text>
+  <!-- links -->
+  <g stroke="#2d3748" stroke-width="2">
+    <line x1="110" y1="270" x2="250" y2="270"/>
+    <line x1="290" y1="250" x2="420" y2="110"/>
+    <line x1="480" y1="110" x2="610" y2="250"/>
+    <line x1="650" y1="270" x2="790" y2="270"/>
+  </g>
+  <!-- devices -->
+  <g font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <ellipse cx="80" cy="270" rx="36" ry="20" fill="#2b6cb0"/><text x="80" y="275">R1</text>
+    <rect x="240" y="248" width="60" height="44" rx="6" fill="#2c7a7b"/><text x="270" y="275">SW1</text>
+    <rect x="420" y="70" width="60" height="44" rx="6" fill="#2c7a7b"/><text x="450" y="97">SW3</text>
+    <rect x="600" y="248" width="60" height="44" rx="6" fill="#2c7a7b"/><text x="630" y="275">SW2</text>
+    <ellipse cx="820" cy="270" rx="36" ry="20" fill="#2b6cb0"/><text x="820" y="275">R2</text>
+  </g>
+  <!-- interface labels -->
+  <g font-size="11" fill="#c53030" font-weight="600">
+    <text x="112" y="300">Gi0/0.12</text><text x="196" y="300">Gi0/0</text>
+    <text x="314" y="244">Gi0/1</text><text x="400" y="150">Gi0/1</text>
+    <text x="462" y="150">Gi0/2</text><text x="550" y="244">Gi0/2</text>
+    <text x="664" y="300">Gi0/0</text><text x="732" y="300">Gi0/0.12</text>
+  </g>
+  <!-- arrows -->
+  <g stroke="#e53e3e" stroke-width="3" fill="none" marker-end="url(#ar)">
+    <line x1="120" y1="232" x2="230" y2="232"/>
+    <line x1="250" y1="200" x2="370" y2="80"/>
+    <line x1="530" y1="80" x2="650" y2="200"/>
+    <line x1="670" y1="232" x2="780" y2="232"/>
+  </g>
+  <!-- tags -->
+  <g font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <rect x="150" y="184" width="50" height="34" rx="4" fill="#2b6cb0"/><text x="175" y="206">12</text>
+    <rect x="218" y="122" width="50" height="34" rx="4" fill="#38a169"/><text x="243" y="144">123</text>
+    <rect x="270" y="122" width="50" height="34" rx="4" fill="#2b6cb0"/><text x="295" y="144">12</text>
+    <rect x="580" y="122" width="50" height="34" rx="4" fill="#38a169"/><text x="605" y="144">123</text>
+    <rect x="632" y="122" width="50" height="34" rx="4" fill="#2b6cb0"/><text x="657" y="144">12</text>
+    <rect x="700" y="184" width="50" height="34" rx="4" fill="#2b6cb0"/><text x="725" y="206">12</text>
+  </g>
+  <g font-size="12" fill="#4a5568" text-anchor="middle">
+    <text x="175" y="176">고객 Tag</text>
+    <text x="270" y="114">SW1이 123 추가</text>
+    <text x="630" y="114">SW2가 123 제거</text>
+    <text x="725" y="176">원래 프레임</text>
+  </g>
+  <g font-size="12" text-anchor="start">
+    <rect x="330" y="300" width="14" height="14" fill="#2b6cb0"/><text x="350" y="312" fill="#2d3748">Customer VLAN 12</text>
+    <rect x="490" y="300" width="14" height="14" fill="#38a169"/><text x="510" y="312" fill="#2d3748">Provider VLAN 123</text>
+  </g>
+</svg>

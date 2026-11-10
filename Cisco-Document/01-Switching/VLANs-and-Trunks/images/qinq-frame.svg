@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 320" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="820" height="320" fill="#ffffff"/>
+  <g font-size="15" font-weight="700" fill="#1a202c" text-anchor="middle">
+    <text x="410" y="28">일반 Ethernet 프레임</text>
+    <text x="410" y="122">고객이 보낸 802.1Q 프레임</text>
+    <text x="410" y="216">Provider 스위치 사이 Trunk 위의 프레임 (Q-in-Q)</text>
+  </g>
+  <g font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">
+    <!-- row 1 -->
+    <rect x="96"  y="40" width="96" height="44" rx="4" fill="#718096"/><text x="144" y="67">Preamble</text>
+    <rect x="196" y="40" width="96" height="44" rx="4" fill="#718096"/><text x="244" y="67">Dest MAC</text>
+    <rect x="296" y="40" width="104" height="44" rx="4" fill="#718096"/><text x="348" y="67">Source MAC</text>
+    <rect x="404" y="40" width="96" height="44" rx="4" fill="#718096"/><text x="452" y="67">Type/Length</text>
+    <rect x="504" y="40" width="150" height="44" rx="4" fill="#718096"/><text x="579" y="67">Data</text>
+    <rect x="658" y="40" width="66" height="44" rx="4" fill="#718096"/><text x="691" y="67">FCS</text>
+    <!-- row 2 -->
+    <rect x="62"  y="134" width="96" height="44" rx="4" fill="#718096"/><text x="110" y="161">Preamble</text>
+    <rect x="162" y="134" width="96" height="44" rx="4" fill="#718096"/><text x="210" y="161">Dest MAC</text>
+    <rect x="262" y="134" width="104" height="44" rx="4" fill="#718096"/><text x="314" y="161">Source MAC</text>
+    <rect x="370" y="134" width="64" height="44" rx="4" fill="#2b6cb0"/><text x="402" y="161">Tag 12</text>
+    <rect x="438" y="134" width="96" height="44" rx="4" fill="#718096"/><text x="486" y="161">Type/Length</text>
+    <rect x="538" y="134" width="150" height="44" rx="4" fill="#718096"/><text x="613" y="161">Data</text>
+    <rect x="692" y="134" width="66" height="44" rx="4" fill="#718096"/><text x="725" y="161">FCS</text>
+    <!-- row 3 -->
+    <rect x="28"  y="228" width="96" height="44" rx="4" fill="#718096"/><text x="76" y="255">Preamble</text>
+    <rect x="128" y="228" width="96" height="44" rx="4" fill="#718096"/><text x="176" y="255">Dest MAC</text>
+    <rect x="228" y="228" width="104" height="44" rx="4" fill="#718096"/><text x="280" y="255">Source MAC</text>
+    <rect x="336" y="228" width="64" height="44" rx="4" fill="#38a169"/><text x="368" y="255">Tag 123</text>
+    <rect x="404" y="228" width="64" height="44" rx="4" fill="#2b6cb0"/><text x="436" y="255">Tag 12</text>
+    <rect x="472" y="228" width="96" height="44" rx="4" fill="#718096"/><text x="520" y="255">Type/Length</text>
+    <rect x="572" y="228" width="150" height="44" rx="4" fill="#718096"/><text x="647" y="255">Data</text>
+    <rect x="726" y="228" width="66" height="44" rx="4" fill="#718096"/><text x="759" y="255">FCS</text>
+  </g>
+  <g font-size="12" fill="#4a5568" text-anchor="middle">
+    <text x="368" y="292">Outer Tag (Provider)</text>
+    <text x="436" y="306">Inner Tag (Customer)</text>
+  </g>
+</svg>
