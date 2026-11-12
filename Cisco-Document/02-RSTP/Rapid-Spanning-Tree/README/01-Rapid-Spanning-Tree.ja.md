@@ -1,6 +1,6 @@
 # Rapid Spanning-Tree (RSTP)
 
-[한국어](../README.md) | [English](README.en.md) | **日本語** | [简体中文](README.zh-CN.md) | [Español](README.es.md) | [Français](README.fr.md)
+[한국어](../01-Rapid-Spanning-Tree.md) | [English](01-Rapid-Spanning-Tree.en.md) | **日本語** | [简体中文](01-Rapid-Spanning-Tree.zh-CN.md) | [Español](01-Rapid-Spanning-Tree.es.md) | [Français](01-Rapid-Spanning-Tree.fr.md)
 
 最近のネットワークではルーティングがますます増えています。OSPF や EIGRP などのルーティングプロトコルは、ネットワークの変化に Spanning Tree よりはるかに速く対応します。この速さについていくために作られたのが **Rapid Spanning Tree (RSTP、IEEE 802.1w)** です。
 

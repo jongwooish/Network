@@ -1,6 +1,6 @@
 # Rapid Spanning-Tree (RSTP)
 
-[한국어](../README.md) | [English](README.en.md) | [日本語](README.ja.md) | **简体中文** | [Español](README.es.md) | [Français](README.fr.md)
+[한국어](../01-Rapid-Spanning-Tree.md) | [English](01-Rapid-Spanning-Tree.en.md) | [日本語](01-Rapid-Spanning-Tree.ja.md) | **简体中文** | [Español](01-Rapid-Spanning-Tree.es.md) | [Français](01-Rapid-Spanning-Tree.fr.md)
 
 如今网络中的路由越来越多。OSPF、EIGRP 等路由协议对网络变化的响应比生成树快得多。为了跟上它们的速度,就有了 **快速生成树(RSTP,IEEE 802.1w)**。
 

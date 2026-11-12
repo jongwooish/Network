@@ -1,6 +1,6 @@
 # Rapid Spanning-Tree (RSTP)
 
-[한국어](../README.md) | [English](README.en.md) | [日本語](README.ja.md) | [简体中文](README.zh-CN.md) | **Español** | [Français](README.fr.md)
+[한국어](../01-Rapid-Spanning-Tree.md) | [English](01-Rapid-Spanning-Tree.en.md) | [日本語](01-Rapid-Spanning-Tree.ja.md) | [简体中文](01-Rapid-Spanning-Tree.zh-CN.md) | **Español** | [Français](01-Rapid-Spanning-Tree.fr.md)
 
 Cada vez hay más enrutamiento en nuestras redes. Protocolos de enrutamiento como OSPF y EIGRP reaccionan a los cambios de la red mucho más rápido que spanning tree. Para seguirles el ritmo se creó **Rapid Spanning Tree (RSTP, IEEE 802.1w)**.
 
