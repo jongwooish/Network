@@ -4,7 +4,7 @@
 
 上一篇笔记整理了 Classic Spanning Tree 与 Rapid Spanning Tree 的区别,以及 RSTP 的工作方式。这次我们实际配置 RSTP,并**用 debug 和 show 命令直接观察它的工作过程**。
 
-> RSTP 的工作原理请先阅读 [01. Rapid Spanning-Tree](01-Rapid-Spanning-Tree.zh-CN.md)。
+> RSTP 的工作原理请先阅读 [01. Rapid Spanning-Tree](../../01-Rapid-Spanning-Tree/README/01-Rapid-Spanning-Tree.zh-CN.md)。
 
 ## 本实验使用的命令
 

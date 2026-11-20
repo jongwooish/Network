@@ -4,7 +4,7 @@
 
 前回のノートでは、Classic Spanning Tree と Rapid Spanning Tree の違い、そして RSTP の動作をまとめました。今回は実際に RSTP を設定し、**debug と show コマンドでその動作を確認**します。
 
-> RSTP の動作原理は、先に [01. Rapid Spanning-Tree](01-Rapid-Spanning-Tree.ja.md) を参照してください。
+> RSTP の動作原理は、先に [01. Rapid Spanning-Tree](../../01-Rapid-Spanning-Tree/README/01-Rapid-Spanning-Tree.ja.md) を参照してください。
 
 ## この実習で使うコマンド
 

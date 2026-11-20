@@ -4,7 +4,7 @@
 
 이전 문서에서 Classic Spanning Tree와 Rapid Spanning Tree의 차이, 그리고 RSTP가 어떻게 동작하는지 정리했습니다. 이번에는 실제로 RSTP를 설정하고, **debug와 show 명령으로 그 동작을 직접 확인**합니다.
 
-> RSTP 동작 원리는 [01. Rapid Spanning-Tree](01-Rapid-Spanning-Tree.md) 를 먼저 보세요.
+> RSTP 동작 원리는 [01. Rapid Spanning-Tree](../01-Rapid-Spanning-Tree/01-Rapid-Spanning-Tree.md) 를 먼저 보세요.
 
 ## 이번 실습에서 쓰는 명령어
 

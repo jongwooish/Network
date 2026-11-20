@@ -4,7 +4,7 @@
 
 En la nota anterior vimos las diferencias entre el spanning tree clásico y el rapid spanning tree, y cómo funciona RSTP. Esta vez configuramos RSTP de verdad y **observamos su funcionamiento con comandos debug y show**.
 
-> Para entender cómo funciona RSTP, lee primero [01. Rapid Spanning-Tree](01-Rapid-Spanning-Tree.es.md).
+> Para entender cómo funciona RSTP, lee primero [01. Rapid Spanning-Tree](../../01-Rapid-Spanning-Tree/README/01-Rapid-Spanning-Tree.es.md).
 
 ## Comandos usados en este laboratorio
 
